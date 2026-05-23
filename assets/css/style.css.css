@@ -1,0 +1,110 @@
+<style>
+  :root { --p: #f902ff; --c: #00dbde; --bg: #050505; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: #fff; font-family: 'Inter', sans-serif; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+  .loader-wrapper {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.8s ease, visibility 0.8s;
+  }
+  .loader-content { text-align: center; }
+  .loader-logo {
+    width: 100px;
+    margin-bottom: 20px;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  .loader-text {
+    font-family: 'Orbitron';
+    font-size: 0.6rem;
+    letter-spacing: 4px;
+    color: #555;
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+  }
+  .loader-hidden { opacity: 0; visibility: hidden; }
+
+  .navbar { position: fixed; width: 100%; z-index: 1000; background: rgba(0,0,0,0.9); padding: 15px 0; border-bottom: 1px solid #111; }
+  .nav-container { display: flex; justify-content: space-around; align-items: center; }
+  .nav-logo img { height: 30px; }
+  .nav-links { display: flex; gap: 25px; list-style: none; font-family: 'Orbitron'; font-size: 0.7rem; }
+  .nav-links a { color: #fff; text-decoration: none; transition: 0.3s; }
+  .nav-links a:hover { color: var(--p); }
+  .nav-btn { background: var(--p); padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: 900; font-size: 0.7rem; color: #fff; }
+
+  .platforms { margin-bottom: 30px; }
+  .platforms span { font-family: 'Orbitron'; font-size: 0.6rem; color: #888; letter-spacing: 2px; }
+  .platform-icons { font-family: 'Orbitron'; font-size: 0.9rem; color: var(--c); margin-top: 5px; font-weight: 900; }
+
+  .hero { height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; text-align: center; }
+  .hero-bg { position: absolute; inset: 0; background: url('fondo.jpg') center/cover; z-index: -2; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, transparent, var(--bg)); z-index: -1; }
+  .main-logo { width: 350px; filter: drop-shadow(0 0 15px var(--p)); margin-bottom: 20px; }
+
+  .hero-description { max-width: 800px; margin-top: 40px; background: rgba(0,0,0,0.4); padding: 20px; border-radius: 10px; border-left: 3px solid var(--p); }
+  .location-tag { font-family: 'Orbitron'; color: var(--c); font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 10px; text-transform: uppercase; }
+  .synopsis-text { font-size: 1rem; line-height: 1.6; color: #ccc; font-weight: 300; }
+
+  .countdown { display: flex; gap: 15px; justify-content: center; margin-bottom: 30px; }
+  .time-block { background: rgba(0,0,0,0.8); border: 1px solid var(--p); padding: 15px; border-radius: 8px; min-width: 80px; }
+  .time-block span { display: block; font-family: 'Orbitron'; font-size: 2rem; }
+  .time-block small { color: var(--c); font-size: 0.6rem; text-transform: uppercase; }
+
+  .btn-primary { background: var(--p); padding: 15px 35px; color: #fff; text-decoration: none; font-weight: 900; border-radius: 50px; transition: 0.4s; font-family: 'Orbitron'; font-size: 0.8rem; }
+
+  .section-detail { padding: 100px 0; }
+  .neon-title { font-family: 'Orbitron'; font-size: 3rem; color: var(--p); text-align: center; text-shadow: 0 0 10px var(--p); margin-bottom: 60px; }
+  
+  .map-content { display: flex; gap: 40px; background: #0a0a0a; padding: 30px; border-radius: 20px; border: 1px solid #1a1a1a; }
+  .map-wrapper { flex: 1.5; border-radius: 15px; overflow: hidden; border: 2px solid #222; position: relative; }
+  .full-map { width: 100%; display: block; transition: 0.5s; }
+  .map-hint { position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.7); padding: 5px 10px; font-size: 0.7rem; color: var(--c); border-radius: 5px; }
+
+  .zone-list { list-style: none; padding: 0; flex: 1; }
+  .zone-item { padding: 15px; margin-bottom: 10px; background: #111; cursor: pointer; transition: 0.3s; border-left: 3px solid transparent; }
+  .zone-item:hover { transform: translateX(10px); border-left-color: var(--c); background: #1a1a1a; }
+  .zone-item strong { display: block; font-family: 'Orbitron'; color: var(--c); }
+
+  .dark-bg { background: #080808; }
+  .prota-flex { display: flex; align-items: center; gap: 50px; margin-bottom: 80px; }
+  .prota-photo { flex: 1; }
+  .prota-photo img { width: 100%; border-radius: 15px; border: 1px solid #222; transition: 0.5s; }
+  .prota-text { flex: 1.5; }
+  .prota-text h3 { font-family: 'Orbitron'; font-size: 2.5rem; margin: 10px 0; }
+  .label { color: var(--c); font-family: 'Orbitron'; font-size: 0.7rem; letter-spacing: 2px; }
+
+  .release-footer { padding: 120px 0; text-align: center; background: linear-gradient(to top, #000, #080808); }
+  .footer-brand-logo { width: 280px; margin-bottom: 40px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.2)); }
+  .release-date { font-family: 'Orbitron'; font-size: 3.5rem; line-height: 1.1; margin-bottom: 60px; text-shadow: 0 0 15px var(--p); text-transform: uppercase; }
+
+  .rating-info { display: flex; align-items: center; justify-content: center; gap: 20px; border-top: 1px solid #222; padding-top: 40px; max-width: 600px; margin: 0 auto; }
+  .pegi-icon { width: 55px; }
+  .rating-info p { font-size: 0.85rem; color: #666; text-align: left; }
+
+  .footer { padding: 60px 20px; background: #000; border-top: 1px solid #111; text-align: center; }
+  .social-block { margin-bottom: 40px; }
+  .social-label { display: block; font-family: 'Orbitron'; font-size: 0.7rem; color: #555; letter-spacing: 3px; margin-bottom: 20px; }
+  .social-icons { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+  .social-icons a { color: #fff; font-size: 1.8rem; transition: 0.3s; }
+  .social-icons a:hover { color: var(--c); transform: translateY(-5px); }
+  .dev-name { color: #888; font-weight: 800; margin-top: 10px; }
+
+  .easter-egg { margin-top: 25px; opacity: 0.3; transition: 0.5s; }
+  .easter-egg:hover { opacity: 1; }
+  .rick-btn { color: #444; text-decoration: none; font-size: 0.7rem; border: 1px solid #222; padding: 5px 10px; border-radius: 4px; transition: 0.3s; }
+  .rick-btn:hover { border-color: var(--p); color: var(--p); background: rgba(249, 2, 255, 0.05); }
+
+  .modal { display: none; position: fixed; z-index: 2000; inset: 0; background: rgba(0,0,0,0.95); padding-top: 80px; backdrop-filter: blur(5px); }
+  .modal-content { margin: auto; display: block; width: 80%; max-width: 850px; border: 2px solid var(--p); box-shadow: 0 0 30px var(--p); border-radius: 10px; animation: zoom 0.3s; }
+  @keyframes zoom { from {transform:scale(0)} to {transform:scale(1)} }
+  .close-modal { position: absolute; top: 30px; right: 40px; color: #fff; font-size: 40px; cursor: pointer; }
+  #caption { text-align: center; color: var(--c); font-family: 'Orbitron'; margin-top: 20px; }
+</style>
