@@ -1,0 +1,99 @@
+/* ============================================================
+   footer.css — Estilos del pie de página
+   ============================================================ */
+
+.footer {
+  padding: 60px 20px;
+  background-color: #000;
+  border-top: 1px solid #111;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.social-block {
+  margin-bottom: 40px;
+}
+
+.social-label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  color: #555;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  color: var(--color-text);
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: color var(--transition), transform var(--transition);
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: var(--color-secondary);
+  transform: translateY(-5px); 
+}
+
+.footer-credits p {
+  color: #555;
+  font-size: 0.85rem;
+  margin: 5px 0;
+}
+
+.dev-name {
+  color: #888 !important;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.easter-egg {
+  margin-top: 25px;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
+.easter-egg:hover {
+  opacity: 1;
+}
+
+.rick-btn {
+  color: #444;
+  text-decoration: none;
+  font-size: 0.7rem;
+  border: 1px solid #222;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: border-color var(--transition),
+              color var(--transition),
+              background-color var(--transition);
+}
+
+.rick-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: rgba(249, 2, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 20px;
+  }
+
+  .social-icons a {
+    font-size: 1.5rem;
+  }
+}

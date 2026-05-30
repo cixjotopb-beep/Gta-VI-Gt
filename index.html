@@ -1,117 +1,201 @@
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Grand Theft Auto VI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
 
   <div id="loader" class="loader-wrapper">
     <div class="loader-content">
-      <img src="images/logo-r2.jpg" alt="Rockstar Logo" class="loader-logo" />
+      <img src="images/logo-r2.jpg" alt="Rockstar Games Logo" class="loader-logo" />
       <p class="loader-text">CARGANDO...</p>
     </div>
   </div>
 
+
   <nav class="navbar">
     <div class="nav-container">
-      <a href="https://www.rockstargames.com" target="_blank" rel="noopener noreferrer" class="nav-logo">
-        <img src="images/logo-r2.jpg" alt="R*" />
+
+      <a
+        href="https://www.rockstargames.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-logo"
+      >
+        <img src="images/logo-r2.jpg" alt="Rockstar Games" />
       </a>
+
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#mapa">El Estado</a></li>
         <li><a href="#personajes">Personajes</a></li>
       </ul>
-      <a href="https://www.rockstargames.com/gta-vi" target="_blank" rel="noopener noreferrer" class="nav-btn">SITIO OFICIAL</a>
+
+      <a
+        href="https://www.rockstargames.com/gta-vi"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="nav-btn"
+      >
+        SITIO OFICIAL
+      </a>
+
     </div>
   </nav>
 
   <header id="inicio" class="hero">
     <div class="hero-bg" id="fade-bg"></div>
     <div class="hero-overlay"></div>
-    <div class="hero-co ntent">
-      <img src="images/logo.jpg" alt="GTA VI" class="main-logo" />
-      
+    <div class="hero-content">
+      <img src="images/logo.jpg" alt="Grand Theft Auto VI" class="main-logo" />
       <div class="platforms">
         <span>DISPONIBLE EN</span>
         <div class="platform-icons">
-          <i class="fab fa-playstation"></i> PS5 &nbsp; | &nbsp; <i class="fab fa-xbox"></i> XBOX SERIES X|S
+          <i class="fab fa-playstation"></i> PS5
+          &nbsp;|&nbsp;
+          <i class="fab fa-xbox"></i> XBOX SERIES X|S
         </div>
       </div>
-      
+
       <div id="countdown" class="countdown">
-        <div class="time-block"><span id="days">00</span><small>Días</small></div>
-        <div class="time-block"><span id="hours">00</span><small>Hrs</small></div>
-        <div class="time-block"><span id="minutes">00</span><small>Min</small></div>
-        <div class="time-block"><span id="seconds">00</span><small>Seg</small></div>
+        <div class="time-block">
+          <span id="days">00</span>
+          <small>Días</small>
+        </div>
+        <div class="time-block">
+          <span id="hours">00</span>
+          <small>Hrs</small>
+        </div>
+        <div class="time-block">
+          <span id="minutes">00</span>
+          <small>Min</small>
+        </div>
+        <div class="time-block">
+          <span id="seconds">00</span>
+          <small>Seg</small>
+        </div>
       </div>
 
-      <a href="https://www.youtube.com/watch?v=QdBZY2fkU-0&t=1s" target="_blank" class="btn-primary">VER TRÁILER</a>
+      <a
+        href="https://www.youtube.com/watch?v=QdBZY2fkU-0&t=1s"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-primary"
+      >
+        VER TRÁILER
+      </a>
 
       <div class="hero-description">
         <p class="location-tag">Vice City, EE. UU.</p>
         <p class="synopsis-text">
-          Jason y Lucia siempre han sabido que las probabilidades están en su contra. Pero cuando un golpe fácil sale mal, se encuentran en el lado más oscuro del lugar más soleado de Estados Unidos, en medio de una conspiración criminal que se extiende por todo el estado de Leonida, obligados a depender el uno del otro más que nunca si quieren salir con vida.
+          Jason y Lucia siempre han sabido que las probabilidades están en su contra.
+          Pero cuando un golpe fácil sale mal, se encuentran en el lado más oscuro del
+          lugar más soleado de Estados Unidos, en medio de una conspiración criminal que
+          se extiende por todo el estado de Leonida, obligados a depender el uno del otro
+          más que nunca si quieren salir con vida.
         </p>
       </div>
+
     </div>
   </header>
 
-
   <section id="mapa" class="section-detail">
     <div class="container">
+
       <h2 class="neon-title">ESTADO DE LEONIDA</h2>
+
       <div class="map-content">
+
+        <!-- Imagen del mapa -->
         <div class="map-wrapper">
-          <img src="images/mapa-general.jpg" alt="Mapa Leonida" class="full-map" />
+          <img src="images/mapa-general.jpg" alt="Mapa del Estado de Leonida" class="full-map" />
         </div>
-        
+
         <div class="text-box">
           <h3>ZONAS CLAVE</h3>
           <ul class="zone-list">
-            <li class="zone-item" data-img="vice-city.jpg" data-title="Vice El glamour, el ajetreo y la codicia de Estados Unidos se concentran en una sola ciudad.
-             Cada barrio tiene algo que ofrecer, desde los hoteles art déco en tonos pastel y las brillantes arenas blancas de Ocean Beach, hasta las bulliciosas panaderías de Little Cuba 
-             y las marcas de contrabando del mercadillo de Tisha-Wocka, pasando por el puerto de Victoria County, la capital mundial de los cruceros.City">
-              <strong>Vice City</strong><span>Metrópolis de Neón</span>
+
+            <li
+              class="zone-item"
+              data-img="images/vice-city.jpg"
+              data-title="Vice City: El glamour, el ajetreo y la codicia de Estados Unidos se concentran en una sola ciudad. Cada barrio tiene algo que ofrecer, desde los hoteles art déco en tonos pastel y las brillantes arenas blancas de Ocean Beach, hasta las bulliciosas panaderías de Little Cuba y las marcas de contrabando del mercadillo de Tisha-Wocka, pasando por el puerto de Victoria County, la capital mundial de los cruceros."
+            >
+              <strong>Vice City</strong>
+              <span>Metrópolis de Neón</span>
             </li>
-            <li class="zone-item" data-img="images/leonida.jpg" data-title="La vida en este archipiélago tropical no es ostentosa, pero es sencilla. Relájate y siéntate en una tumbona, pero ten cuidado:
-             estás a las puertas de algunas de las aguas más bellas y peligrosas de toda América.">
-              <strong>Leonida Keys</strong><span>Archipiélago Turístico</span>
+
+            <li
+              class="zone-item"
+              data-img="images/leonida.jpg"
+              data-title="Leonida Keys: La vida en este archipiélago tropical no es ostentosa, pero es sencilla. Relájate y siéntate en una tumbona, pero ten cuidado: estás a las puertas de algunas de las aguas más bellas y peligrosas de toda América."
+            >
+              <strong>Leonida Keys</strong>
+              <span>Archipiélago Turístico</span>
             </li>
-            <li class="zone-item" data-img="images/grassrivers.jpg" data-title="Nunca se sabe qué se esconde bajo la superficie de esta extensión primigenia. Los caimanes quizás sean la atracción más famosa,
-             pero entre los manglares hay depredadores mucho más letales y descubrimientos más extraños.">
-              <strong>Grassrivers</strong><span>Humedales Peligrosos</span>
+
+            <li
+              class="zone-item"
+              data-img="images/grassrivers.jpg"
+              data-title="Grassrivers: Nunca se sabe qué se esconde bajo la superficie de esta extensión primigenia. Los caimanes quizás sean la atracción más famosa, pero entre los manglares hay depredadores mucho más letales y descubrimientos más extraños."
+            >
+              <strong>Grassrivers</strong>
+              <span>Humedales Peligrosos</span>
             </li>
-            <li class="zone-item" data-img="images/gellhornd.jpg" data-title="Los moteles baratos, las atracciones cerradas y los centros comerciales vacíos no atraerán de nuevo a los turistas,
-             pero hay una nueva economía en este otrora popular destino vacacional. Se basa en la cerveza de malta, 
-            los analgésicos y las bebidas energéticas de las paradas de camiones. Súbete a una moto de cross y agárrate bien la cartera.">
-              <strong>Port Gellhorn</strong><span>Núcleo Industrial</span>
+
+            <li
+              class="zone-item"
+              data-img="images/gellhorn.jpg"
+              data-title="Port Gellhorn: Los moteles baratos, las atracciones cerradas y los centros comerciales vacíos no atraerán de nuevo a los turistas, pero hay una nueva economía en este otrora popular destino vacacional. Se basa en la cerveza de malta, los analgésicos y las bebidas energéticas de las paradas de camiones."
+            >
+              <strong>Port Gellhorn</strong>
+              <span>Núcleo Industrial</span>
             </li>
-            <li class="zone-item" data-img="images/ambrosia.jpg" data-title="En el corazón de Leonida, la industria estadounidense y los valores tradicionales siguen imperando, 
-            cueste lo que cueste. La refinería de azúcar Allied Crystal proporciona los empleos, 
-            mientras que la pandilla local de motociclistas se encarga de casi todo lo demás.">
-              <strong>Ambrosia</strong><span>Campos Agrícolas</span>
+
+            <li
+              class="zone-item"
+              data-img="images/ambrosia.jpg"
+              data-title="Ambrosia: En el corazón de Leonida, la industria estadounidense y los valores tradicionales siguen imperando, cueste lo que cueste. La refinería de azúcar Allied Crystal proporciona los empleos, mientras que la pandilla local de motociclistas se encarga de casi todo lo demás."
+            >
+              <strong>Ambrosia</strong>
+              <span>Campos Agrícolas</span>
             </li>
-            <li class="zone-item" data-img="images/kalaga.jpg" data-title="El monte Kalaga, un monumento nacional situado junto a la frontera norte del estado, ofrece excelentes oportunidades para la caza,
-             la pesca y rutas todoterreno. En los frondosos bosques circundantes, 
-             místicos de la zona rural y radicales paranoicos viven lejos de la vigilancia del gobierno.">
-              <strong>Mount Kalaga</strong><span>Cumbres del Estado</span>
+
+            <li
+              class="zone-item"
+              data-img="images/kalaga.jpg"
+              data-title="Mount Kalaga: El monte Kalaga, un monumento nacional situado junto a la frontera norte del estado, ofrece excelentes oportunidades para la caza, la pesca y rutas todoterreno. En los frondosos bosques circundantes, místicos de la zona rural y radicales paranoicos viven lejos de la vigilancia del gobierno."
+            >
+              <strong>Mount Kalaga</strong>
+              <span>Cumbres del Estado</span>
             </li>
+
           </ul>
         </div>
+
       </div>
     </div>
   </section>
 
   <section id="personajes" class="section-detail dark-bg">
     <div class="container">
+
       <h2 class="neon-title">REPARTO</h2>
 
       <div class="prota-flex">
-        <div class="prota-photo"><img src="images/lucia.jpg" alt="Lucia" /></div>
+        <div class="prota-photo">
+          <img src="images/lucia.jpg" alt="Lucia" />
+        </div>
         <div class="prota-text">
           <span class="label">Protagonista</span>
           <h3>LUCIA</h3>
@@ -125,11 +209,15 @@
           <h3>JASON</h3>
           <p>Compañero y cómplice; un hombre de pocas palabras que confía en sus instintos para sobrevivir en el mundo criminal.</p>
         </div>
-        <div class="prota-photo"><img src="images/jason.jpg" alt="Jason" /></div>
+        <div class="prota-photo">
+          <img src="images/jason.jpg" alt="Jason" />
+        </div>
       </div>
 
       <div class="prota-flex">
-        <div class="prota-photo"><img src="images/Cal.jpg" alt="Cal Hampton" /></div>
+        <div class="prota-photo">
+          <img src="images/Cal.jpg" alt="Cal Hampton" />
+        </div>
         <div class="prota-text">
           <span class="label">Apoyo Técnico</span>
           <h3>CAL HAMPTON</h3>
@@ -143,11 +231,15 @@
           <h3>BOOBIE IKE</h3>
           <p>Dueño de clubes de striptease, propiedades y estudios de grabación en Vice City.</p>
         </div>
-        <div class="prota-photo"><img src="images/boobie.jpg" alt="Boobie Ike" /></div>
+        <div class="prota-photo">
+          <img src="images/boobie.jpg" alt="Boobie Ike" />
+        </div>
       </div>
 
       <div class="prota-flex">
-        <div class="prota-photo"><img src="images/brian.jpg" alt="Brian Heder" /></div>
+        <div class="prota-photo">
+          <img src="images/brian.jpg" alt="Brian Heder" />
+        </div>
         <div class="prota-text">
           <span class="label">Narcotraficante</span>
           <h3>BRIAN HEDER</h3>
@@ -161,11 +253,15 @@
           <h3>RAÚL BAUTISTA</h3>
           <p>Atracador de bancos experimentado que ayuda a planificar golpes.</p>
         </div>
-        <div class="prota-photo"><img src="images/raul.jpg" alt="Raúl Bautista" /></div>
+        <div class="prota-photo">
+          <img src="images/raul.jpg" alt="Raúl Bautista" />
+        </div>
       </div>
 
       <div class="prota-flex">
-        <div class="prota-photo"><img src="images/dimez.jpg" alt="Real Dimez" /></div>
+        <div class="prota-photo">
+          <img src="images/dimez.jpg" alt="Real Dimez" />
+        </div>
         <div class="prota-text">
           <span class="label">Social Media</span>
           <h3>REAL DIMEZ</h3>
@@ -179,224 +275,91 @@
           <h3>DRICK ONE PRIEST</h3>
           <p>Buscavidas enfocado en la música y relacionado con Boobie Ike.</p>
         </div>
-        <div class="prota-photo"><img src="images/dre.jpg" alt="Drick One Priest" /></div>
+        <div class="prota-photo">
+          <img src="images/dre.jpg" alt="Drick One Priest" />
+        </div>
       </div>
+
     </div>
   </section>
 
   <section class="release-footer">
     <div class="container">
       <div class="release-content">
+
         <img src="images/logo.jpg" alt="GTA VI Logo" class="footer-brand-logo" />
-        
+
         <h2 class="release-date">
-          Disponible <br />
-          el 19 de noviembre <br />
+          Disponible<br />
+          el 19 de noviembre<br />
           de 2026
         </h2>
 
         <div class="rating-info">
           <img src="images/18.jpg" alt="PEGI 18" class="pegi-icon" />
           <p>
-            Puede incluir contenido no apto para menores. <br />
+            Puede incluir contenido no apto para menores.<br />
             Entra en <strong>pegi.info</strong> para consultar los detalles de la clasificación.
           </p>
         </div>
+
       </div>
     </div>
   </section>
 
-    <footer class="footer">
+  <footer class="footer">
     <div class="footer-container">
+
       <div class="social-block">
         <span class="social-label">SÍGUENOS EN NUESTRAS REDES</span>
         <div class="social-icons">
-          <a href="https://www.instagram.com/rockstargames/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/RockstarGames" target="_blank"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://www.youtube.com/user/RockstarGames" target="_blank"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.facebook.com/rockstargames" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.twitch.tv/rockstargames" target="_blank"><i class="fab fa-twitch"></i></a>
-          <a href="https://www.tiktok.com/@rockstargames" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/rockstargames/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/RockstarGames" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com/user/RockstarGames" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.facebook.com/rockstargames" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.twitch.tv/rockstargames" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitch"></i>
+          </a>
+          <a href="https://www.tiktok.com/@rockstargames" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-tiktok"></i>
+          </a>
         </div>
       </div>
 
       <div class="footer-credits">
-        <p>Ingeniería de Sistemas - UMG Santiago Sacatepéquez</p>
+        <p>Ingeniería de Sistemas — UMG, jocotenango</p>
         <p class="dev-name">Desarrollado por Cristian Ixjotop</p>
-        
         <div class="easter-egg">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="rick-btn">
-                <i class="fas fa-info-circle"></i> Soporte Técnico
-            </a>
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rick-btn"
+          >
+            <i class="fas fa-info-circle"></i> Soporte Técnico
+          </a>
         </div>
       </div>
+
     </div>
   </footer>
 
   <div id="mapModal" class="modal">
     <span class="close-modal">&times;</span>
-    <img class="modal-content" id="imgExpanded" />
-    <div id="caption"></div>
+    <img class="modal-img" id="imgExpanded" src="" alt="Zona seleccionada" />
+    <p class="modal-caption" id="modalCaption"></p>
   </div>
+
+
+  <script src="assets/javascript/main.js"></script>
 
 </body>
 </html>
-
-<style>
-  :root { --p: #f902ff; --c: #00dbde; --bg: #050505; }
-  html { scroll-behavior: smooth; }
-  body { margin: 0; background: var(--bg); color: #fff; font-family: 'Inter', sans-serif; }
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-
-  .loader-wrapper {
-    position: fixed;
-    inset: 0;
-    background: #000;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.8s ease, visibility 0.8s;
-  }
-  .loader-content { text-align: center; }
-  .loader-logo {
-    width: 100px;
-    margin-bottom: 20px;
-    animation: pulse 1.5s infinite ease-in-out;
-  }
-  .loader-text {
-    font-family: 'Orbitron';
-    font-size: 0.6rem;
-    letter-spacing: 4px;
-    color: #555;
-  }
-  @keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.1); opacity: 0.8; }
-  }
-  .loader-hidden { opacity: 0; visibility: hidden; }
-
-  .navbar { position: fixed; width: 100%; z-index: 1000; background: rgba(0,0,0,0.9); padding: 15px 0; border-bottom: 1px solid #111; }
-  .nav-container { display: flex; justify-content: space-around; align-items: center; }
-  .nav-logo img { height: 30px; }
-  .nav-links { display: flex; gap: 25px; list-style: none; font-family: 'Orbitron'; font-size: 0.7rem; }
-  .nav-links a { color: #fff; text-decoration: none; transition: 0.3s; }
-  .nav-links a:hover { color: var(--p); }
-  .nav-btn { background: var(--p); padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: 900; font-size: 0.7rem; color: #fff; }
-
-  .platforms { margin-bottom: 30px; }
-  .platforms span { font-family: 'Orbitron'; font-size: 0.6rem; color: #888; letter-spacing: 2px; }
-  .platform-icons { font-family: 'Orbitron'; font-size: 0.9rem; color: var(--c); margin-top: 5px; font-weight: 900; }
-
-  .hero { height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; text-align: center; }
-  .hero-bg { position: absolute; inset: 0; background: url('fondo.jpg') center/cover; z-index: -2; }
-  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, transparent, var(--bg)); z-index: -1; }
-  .main-logo { width: 350px; filter: drop-shadow(0 0 15px var(--p)); margin-bottom: 20px; }
-
-  .hero-description { max-width: 800px; margin-top: 40px; background: rgba(0,0,0,0.4); padding: 20px; border-radius: 10px; border-left: 3px solid var(--p); }
-  .location-tag { font-family: 'Orbitron'; color: var(--c); font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 10px; text-transform: uppercase; }
-  .synopsis-text { font-size: 1rem; line-height: 1.6; color: #ccc; font-weight: 300; }
-
-  .countdown { display: flex; gap: 15px; justify-content: center; margin-bottom: 30px; }
-  .time-block { background: rgba(0,0,0,0.8); border: 1px solid var(--p); padding: 15px; border-radius: 8px; min-width: 80px; }
-  .time-block span { display: block; font-family: 'Orbitron'; font-size: 2rem; }
-  .time-block small { color: var(--c); font-size: 0.6rem; text-transform: uppercase; }
-
-  .btn-primary { background: var(--p); padding: 15px 35px; color: #fff; text-decoration: none; font-weight: 900; border-radius: 50px; transition: 0.4s; font-family: 'Orbitron'; font-size: 0.8rem; }
-
-  .section-detail { padding: 100px 0; }
-  .neon-title { font-family: 'Orbitron'; font-size: 3rem; color: var(--p); text-align: center; text-shadow: 0 0 10px var(--p); margin-bottom: 60px; }
-  
-  .map-content { display: flex; gap: 40px; background: #0a0a0a; padding: 30px; border-radius: 20px; border: 1px solid #1a1a1a; }
-  .map-wrapper { flex: 1.5; border-radius: 15px; overflow: hidden; border: 2px solid #222; position: relative; }
-  .full-map { width: 100%; display: block; transition: 0.5s; }
-  .map-hint { position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.7); padding: 5px 10px; font-size: 0.7rem; color: var(--c); border-radius: 5px; }
-
-  .zone-list { list-style: none; padding: 0; flex: 1; }
-  .zone-item { padding: 15px; margin-bottom: 10px; background: #111; cursor: pointer; transition: 0.3s; border-left: 3px solid transparent; }
-  .zone-item:hover { transform: translateX(10px); border-left-color: var(--c); background: #1a1a1a; }
-  .zone-item strong { display: block; font-family: 'Orbitron'; color: var(--c); }
-
-  .dark-bg { background: #080808; }
-  .prota-flex { display: flex; align-items: center; gap: 50px; margin-bottom: 80px; }
-  .prota-photo { flex: 1; }
-  .prota-photo img { width: 100%; border-radius: 15px; border: 1px solid #222; transition: 0.5s; }
-  .prota-text { flex: 1.5; }
-  .prota-text h3 { font-family: 'Orbitron'; font-size: 2.5rem; margin: 10px 0; }
-  .label { color: var(--c); font-family: 'Orbitron'; font-size: 0.7rem; letter-spacing: 2px; }
-
-  .release-footer { padding: 120px 0; text-align: center; background: linear-gradient(to top, #000, #080808); }
-  .footer-brand-logo { width: 280px; margin-bottom: 40px; filter: drop-shadow(0 0 10px rgba(255,255,255,0.2)); }
-  .release-date { font-family: 'Orbitron'; font-size: 3.5rem; line-height: 1.1; margin-bottom: 60px; text-shadow: 0 0 15px var(--p); text-transform: uppercase; }
-
-  .rating-info { display: flex; align-items: center; justify-content: center; gap: 20px; border-top: 1px solid #222; padding-top: 40px; max-width: 600px; margin: 0 auto; }
-  .pegi-icon { width: 55px; }
-  .rating-info p { font-size: 0.85rem; color: #666; text-align: left; }
-
-  .footer { padding: 60px 20px; background: #000; border-top: 1px solid #111; text-align: center; }
-  .social-block { margin-bottom: 40px; }
-  .social-label { display: block; font-family: 'Orbitron'; font-size: 0.7rem; color: #555; letter-spacing: 3px; margin-bottom: 20px; }
-  .social-icons { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
-  .social-icons a { color: #fff; font-size: 1.8rem; transition: 0.3s; }
-  .social-icons a:hover { color: var(--c); transform: translateY(-5px); }
-  .dev-name { color: #888; font-weight: 800; margin-top: 10px; }
-
-  .easter-egg { margin-top: 25px; opacity: 0.3; transition: 0.5s; }
-  .easter-egg:hover { opacity: 1; }
-  .rick-btn { color: #444; text-decoration: none; font-size: 0.7rem; border: 1px solid #222; padding: 5px 10px; border-radius: 4px; transition: 0.3s; }
-  .rick-btn:hover { border-color: var(--p); color: var(--p); background: rgba(249, 2, 255, 0.05); }
-
-  .modal { display: none; position: fixed; z-index: 2000; inset: 0; background: rgba(0,0,0,0.95); padding-top: 80px; backdrop-filter: blur(5px); }
-  .modal-content { margin: auto; display: block; width: 80%; max-width: 850px; border: 2px solid var(--p); box-shadow: 0 0 30px var(--p); border-radius: 10px; animation: zoom 0.3s; }
-  @keyframes zoom { from {transform:scale(0)} to {transform:scale(1)} }
-  .close-modal { position: absolute; top: 30px; right: 40px; color: #fff; font-size: 40px; cursor: pointer; }
-  #caption { text-align: center; color: var(--c); font-family: 'Orbitron'; margin-top: 20px; }
-</style>
-
-<script>
-  window.addEventListener('load', () => {
-    const loader = document.getElementById('loader');
-    setTimeout(() => {
-      loader.classList.add('loader-hidden');
-    }, 2000);
-  });
-
-  const modal = document.getElementById("mapModal");
-  const modalImg = document.getElementById("imgExpanded");
-  const captionText = document.getElementById("caption");
-  
-  document.querySelectorAll('.zone-item').forEach(item => {
-    item.addEventListener('click', () => {
-      modal.style.display = "block";
-      modalImg.src = item.getAttribute('data-img');
-      captionText.innerText = item.getAttribute('data-title');
-    });
-  });
-
-  document.querySelector(".close-modal").onclick = () => modal.style.display = "none";
-  window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
-
-  const targetDate = new Date('November 19, 2026 00:00:00').getTime();
-  setInterval(() => {
-    const now = new Date().getTime();
-    const gap = targetDate - now;
-    const second = 1000, minute = second * 60, hour = minute * 60, day = hour * 24;
-    
-    document.getElementById('days').innerText = Math.floor(gap / day).toString().padStart(2, '0');
-    document.getElementById('hours').innerText = Math.floor((gap % day) / hour).toString().padStart(2, '0');
-    document.getElementById('minutes').innerText = Math.floor((gap % hour) / minute).toString().padStart(2, '0');
-    document.getElementById('seconds').innerText = Math.floor((gap % minute) / second).toString().padStart(2, '0');
-  }, 1000);
-
-  window.addEventListener('scroll', () => {
-    const fadeBg = document.getElementById('fade-bg');
-    const scrollPosition = window.scrollY;
-    const opacity = 1 - (scrollPosition / 800);
-    
-    if (opacity >= 0) {
-      fadeBg.style.opacity = opacity;
-    } else {
-      fadeBg.style.opacity = 0;
-    }
-  });
-</script>

@@ -1,0 +1,112 @@
+/* ============================================================
+   countdown.css — Estilos del contador regresivo
+   ============================================================ */
+
+.countdown {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;     
+}
+
+.time-block {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid var(--color-primary);
+  padding: 15px;
+  border-radius: var(--radius);
+  min-width: 80px;
+  text-align: center;
+}
+
+.time-block span {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.time-block small {
+  display: block;
+  color: var(--color-secondary);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.release-footer {
+  padding: 120px 0;
+  text-align: center;
+  background: linear-gradient(to top, #000, var(--color-bg-dark));
+}
+
+.release-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-brand-logo {
+  width: 280px;
+  margin-bottom: 40px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.release-date {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin: 0 0 60px 0;
+  text-shadow: 0 0 15px var(--color-primary);
+  text-transform: uppercase;
+}
+
+.rating-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pegi-icon {
+  width: 55px;
+  flex-shrink: 0;
+}
+
+.rating-info p {
+  font-size: 0.85rem;
+  color: var(--color-text-dim);
+  text-align: left;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .time-block {
+    min-width: 65px;
+    padding: 10px;
+  }
+
+  .time-block span {
+    font-size: 1.5rem;
+  }
+
+  .release-date {
+    font-size: 2.2rem;
+  }
+
+  .rating-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rating-info p {
+    text-align: center;
+  }
+}
